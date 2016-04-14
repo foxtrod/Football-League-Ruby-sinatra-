@@ -77,7 +77,7 @@ post '/:id/players' do
   player.name = params[:name]
   player.team = team
   player.save
-  redirect '/:id/players'
+  redirect "/#{params[:id]}/players"
 end
 
 put '/:id/players' do
