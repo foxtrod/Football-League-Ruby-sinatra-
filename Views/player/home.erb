@@ -1,0 +1,14 @@
+<section id="add">
+  <form method="post">
+    <textarea name="name"></textarea>
+    <input type="submit" value="Add player">
+  </form>
+</section>
+
+<% @players.each do |player| %>
+    <article>
+      <p>
+        <%= player.name %>
+      </p>
+    </article>
+<% end %>

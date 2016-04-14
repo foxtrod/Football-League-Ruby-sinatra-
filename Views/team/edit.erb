@@ -1,0 +1,11 @@
+<% if @team %>
+    <form action="/<%= @team.id %>" method="post" id="edit">
+      <input type="hidden" name="_method" value="put">
+      <textarea name="name"><%= @team.name %></textarea>
+      <input type="submit" value="Done">
+    </form>
+    <p><a href="/<%= @team.id %>/delete">Delete</a></p>
+    <p><a href="/<%= @team.id %>/players">Add player</a></p>
+<% end %>
+
+

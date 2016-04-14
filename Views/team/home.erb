@@ -1,0 +1,15 @@
+<section id="add">
+  <form action="/" method="post">
+    <textarea name="name" ></textarea>
+    <input type="submit" value="Add team">
+  </form>
+</section>
+
+<% @teams.each do |team| %>
+    <article>
+      <p>
+        <%= team.name %>
+        <span><a href="/<%= team.id %>">[edit]</a></span>
+      </p>
+    </article>
+<% end %>
